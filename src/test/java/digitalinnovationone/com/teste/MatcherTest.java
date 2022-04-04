@@ -15,14 +15,14 @@ public class MatcherTest {
 
 	@Test
 	public void givenBean_checkToString() {
-		Person person = new Person("Barak","Obama");
+		Person person = new Person("Mazalli","Junior");
 		String str = person.toString();
 		assertThat(person, HasToString.hasToString(str));
 	}
 	
 	@Test
 	public void givenBean_checkPropertyExists() {
-		Person person = new Person("Barak","Obama");
+		Person person = new Person("Mazalli","Junior");
 		assertThat(person, HasProperty.hasProperty("name"));
 	}
 	

@@ -16,16 +16,16 @@ public class ExemploJunit5Test {
 	void lambdaExpressions() {
 		assertTrue(Stream.of(1,2,3)
 				.mapToInt(i -> i)
-				.sum() > 5);    // Sum should be greater than 5
+				.sum() > 5);    // A soma deve ser maior que 5
 	}
 	
 	@Test
 	void groupAssertions() {
-		int[] numbers = {0,1,2,3,4};
-		assertAll("numbers",
-				() -> assertEquals(numbers[0],1),
-				() -> assertEquals(numbers[3],3),
-				() -> assertEquals(numbers[4],1));
+		int[] numeros = {0,1,2,3,4};
+		assertAll("numeros",
+				() -> assertEquals(numeros[0],1),
+				() -> assertEquals(numeros[3],3),
+				() -> assertEquals(numeros[4],1));
 	}
 	
 	@Test
@@ -42,8 +42,8 @@ public class ExemploJunit5Test {
 	
 	@Test
 	void assumptionThat() {
-		String someString = "Just a string";
-		assumingThat(someString.equals("Just a string"), 
+		String someString = "Apenas uma string";
+		assumingThat(someString.equals("JApenas uma string"), 
 						() -> assertEquals(2+2,4));
 	}
 }

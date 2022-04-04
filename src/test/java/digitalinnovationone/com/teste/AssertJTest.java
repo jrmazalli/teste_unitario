@@ -8,7 +8,7 @@ public class AssertJTest {
 
 	@Test
 	public void checkEquality() {
-		Person person = new Person("Barak","Obama");
+		Person person = new Person("Mazalli","Junior");
 		Person personClose = person;
 		
 		assertThat(person).isEqualTo(personClose);

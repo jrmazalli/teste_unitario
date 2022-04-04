@@ -7,7 +7,7 @@ import org.junit.Test;
 public class CalculadoraNovaTest {
 
 	@Test
-	public void deveSomarDoisVAlores() {
+	public void deveSomarDoisValores() {
 		int valorA = 1;
 		int valorB = 2;
 		
@@ -18,7 +18,7 @@ public class CalculadoraNovaTest {
 	}
 	
 	@Test
-	public void deveSomarTresVAlores() {
+	public void deveSomarTresValores() {
 		int valorA = 1;
 		int valorB = 2;
 		int valorC = 3;

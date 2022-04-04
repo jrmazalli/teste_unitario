@@ -16,7 +16,7 @@ public class ExceptionTest {
 	@Test(expected = IndexOutOfBoundsException.class)
 	public void empty() {
 		List<String> lista = new ArrayList<String>();
-		lista.add("Rodrigo");
+		lista.add("Mazalli");
 		
 		lista.get(0);
 	}
